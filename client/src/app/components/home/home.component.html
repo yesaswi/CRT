@@ -1,0 +1,23 @@
+<!-- <div class="data">
+<mat-accordion *ngIf="studentsList.length > 0">
+  <mat-expansion-panel *ngFor="let student of studentsList">
+    <mat-expansion-panel-header>
+      {{ student._id }}
+    </mat-expansion-panel-header>
+    <p>{{ student.name }}</p>
+  </mat-expansion-panel>
+</mat-accordion>
+<p class="info-text mat-body-1" *ngIf="studentsList.length <= 0">No posts added yet!</p>
+</div> -->
+
+<!-- <h1>Students List</h1>
+<ul>
+  <li *ngFor="let hero of studentsList">
+    {{ hero.name }}
+    {{ hero._id}}
+  </li>
+</ul> -->
+
+<div class="data">
+<ng2-smart-table [settings]="settings" [source]="studentsList"></ng2-smart-table>
+</div>
